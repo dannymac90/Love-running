@@ -7,8 +7,9 @@
 }
 
 body {
-    font-family: lato; sans-serif:
-    font-weight: 300;
+    font-family: lato;
+    sans-serif:
+        font-weight: 300;
     color: #3a3a3a;
 }
 
@@ -32,7 +33,9 @@ h2 {
     font-size: 110%;
     letter-spacing: 4px;
 }
-#menu, #logo {
+
+#menu,
+#logo {
     line-height: 75px;
 }
 
@@ -57,7 +60,7 @@ h2 {
 
 #hero-outer {
     height: 600px;
-    width: 100%;   
+    width: 100%;
     overflow: hidden;
 
     position: relative;
@@ -71,7 +74,7 @@ h2 {
     background: url('../images/hero-image.webp') no-repeat center center;
 
     /* animates zoom effect on loading page*/
-/* remove this animation-name: hero-zoom;
+    /* remove this animation-name: hero-zoom;
 animation-duration: 5s;
 animation-fill-mode: forwards; */
 
@@ -81,15 +84,18 @@ animation-fill-mode: forwards; */
 
 /* Create level of zoom on hero image*/
 @keyframes hero-zoom {
-    from{
+    from {
         transform: scale(1);
     }
-    to{
+
+    to {
         transform: scale(1.1);
     }
 }
-#cover-text, #cover-text h2{
-    color:#fff;
+
+#cover-text,
+#cover-text h2 {
+    color: #fff;
 }
 
 #cover-text {
@@ -144,7 +150,7 @@ hr {
     float: right;
     line-height: 20px;
     /* Ensures each content block is aligned verticallty */
-    clear: both; 
+    clear: both;
     margin-bottom: 50px;
 }
 
@@ -153,11 +159,11 @@ hr {
     float: left;
     line-height: 20px;
     /* Ensures each content block is aligned verticallty */
-    clear: both; 
+    clear: both;
     margin-bottom: 50px;
 }
 
-.right-about-heading h2{
+.right-about-heading h2 {
     text-align: right;
 }
 
@@ -191,9 +197,10 @@ hr {
 #times {
     background: url(../images/dublin-city.webp);
     background-repeat: no-repeat;
-    background-size: cover;background-position: center;
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    overflow:  hidden;
+    overflow: hidden;
 }
 
 #times div {
@@ -220,7 +227,7 @@ footer {
     text-align: center;
 }
 
-.social-networks > li {
+.social-networks>li {
     display: inline;
 }
 
@@ -232,74 +239,102 @@ footer {
 }
 
 /*Photos Page*/
-    #photos {
-        clear: both;
-        line-height: 0;
-        column-count: 4;
-        column-gap: 0;
+#photos {
+    clear: both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0;
+}
+
+#photos>img {
+    width: 100%;
+}
+
+.form-section {
+    clear: left;
+    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/formbg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+
+.signup-form {
+    margin: 150px 10% 0 0;
+    color: #fff;
+    background-color: rgba(60, 60, 60, 0.6);
+    max-width: 400px;
+    position: absolute;
+    padding: 30px;
+}
+
+/* For Tablet display*/
+@media screen and (max-width: 1200px) {
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto
     }
-    #photos > img {
+
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    #left-about,
+    #right-about {
         width: 100%;
+        float: left;
+        padding: 0;
     }
 
-    .form-section {
+    #center-about {
+        clear: both;
+        width: 100&;
+        float: left;
+        padding: 0;
+    }
+
+    #hr {
+        display: none;
+    }
+}
+
+/*For medium screen size from 950px and down*/
+@media screen and (max-width: 950px) {
+
+    #menu {
         clear: left;
-        background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/formbg.jpg");
-        background-size: cover;
-        background-position: center;
-        height: 900px;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+
     }
 
-    .signup-form {
-        margin: 150px 10% 0 0;
-        color: #fff;
-        background-color: rgba(60, 60, 60, 0.6);
-        max-width: 400px;
-        position: absolute;
-        padding: 30px;
+    #cover-text {
+        left: 0;
     }
 
-        /* For Tablet display*/
-    @media screen and (max-width: 1200px) {
-        #club-ethos {
-            width: 65%;
-            height: 1200px;
-            margin: 0 auto
-        }
-
-        #welcome {
-            padding: 30px 0;
-            margin: 0;
-        }
-
-        #left-about, #right-about {
-            width: 100%;
-            float: left;
-            padding: 0;
-        }
-
-        #center-about {
-            clear: both;
-            width: 100&;
-            float: left;
-            padding: 0;
-        }
-
-        #hr {
-            display: none;
-        }
+    #club-ethos {
+        width: 90%;
+        height: 1200px;
+        margin: 0 auto;
     }
 
-    /*For medium screen size from 950px and down*/
-    @media screen and (max-width: 950px) {
-
-        #menu {
-            clear: left;
-            float: left;
-            margin-left: 30px;
-            margin-bottom: 20px;
-            line-height: 25px;
-    
-        }
-        
+    .left-about-heading,
+    .right-about-heading {
+        width: inherit;
     }
+
+    .left-about-heading,
+    .right-about-heading h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-about-heading p,
+    .right-about-heading p {
+        text-align: center;
+        padding: 0 20px;
+    }
+}
